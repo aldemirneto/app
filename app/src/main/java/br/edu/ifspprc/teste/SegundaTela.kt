@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
+
 import android.widget.Toast
 
 class SegundaTela : AppCompatActivity() {
@@ -17,16 +17,17 @@ class SegundaTela : AppCompatActivity() {
         submeter.setOnClickListener{
             if (editText.text.toString() == "O ser humano"){
                 Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
-                editText.setText("");
+                irParaTerceiraTela()
             }
             else{
-                editText.setText("1");
+                Toast.makeText(this@SegundaTela, "Errou, tente novamente", Toast.LENGTH_SHORT).show()
+                editText.setText("")
 
             }
         }
     }
 
-    private fun IrParaTerceiraTela(){
+    private fun irParaTerceiraTela(){
         val intent = Intent(this, TerceiraTela::class.java)
         startActivity(intent)
     }
