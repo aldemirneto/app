@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">teste</string>
     <string name="neto_lindo">Neto é Lindo</string>
+    <string name="come_ar">Começar</string>
+    <string name="bem_vindo_aos_enigmas">Bem Vindo aos Enigmas!</string>
+    <string name="escreva_aqui">Escreva aqui...</string>
+    <string name="que_animal_anda_pela_manh_sobre_quatro_patas_a_tarde_sobre_duas_e_a_noite_sobre_tr_s">Que animal anda pela manhã sobre quatro patas, a tarde sobre duas e a noite sobre três?</string>
+    <string name="submeter">submeter</string>
 </resources>
