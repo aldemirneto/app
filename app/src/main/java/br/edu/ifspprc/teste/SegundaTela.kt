@@ -17,10 +17,11 @@ class SegundaTela : AppCompatActivity() {
         submeter.setOnClickListener{
             if (editText.text.toString() == "O ser humano"){
                 Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
-                editText.setText("");
+                IrParaTerceiraTela()
             }
             else{
-                editText.setText("1");
+                Toast.makeText(this@SegundaTela, "Errou, tente novamente", Toast.LENGTH_SHORT).show()
+                editText.setText("");
 
             }
         }
