@@ -6,23 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".QuartaTela">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="400dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="--.- ..- .- .-.. / .- / -- . .-.. .... --- .-. / ..-. .- -.-. ..- .-.. -.. .- -.. . / -.. --- / -... .-. .- ... .. .-.. ..--.."
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="409dp"
         android:layout_height="wrap_content"
@@ -54,24 +37,38 @@
 
     <ImageView
         android:id="@+id/iniciar_musica"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="72dp"
+        android:layout_width="70dp"
+        android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
+        app:layout_constraintVertical_bias="0.241"
         app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
 
     <ImageView
         android:id="@+id/parar_musica"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toEndOf="@+id/iniciar_musica"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371"
+        app:layout_constraintVertical_bias="0.237"
         app:srcCompat="@drawable/ic_baseline_stop_24" />
+
+    <Button
+        android:id="@+id/Dica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
