@@ -9,7 +9,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val botao: Button = findViewById(R.id.bt_segunda_tela)
+        botao.setBackgroundResource(R.color.black)
         botao.setOnClickListener{
             IrParaSegundaTela()
         }

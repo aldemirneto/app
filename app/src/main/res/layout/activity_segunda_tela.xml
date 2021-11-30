@@ -8,15 +8,20 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="97dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="428dp"
 
-        android:autoText="true"
+
+        android:fontFamily="sans-serif-condensed"
+        android:minHeight="48dp"
         android:text="@string/que_animal_anda_pela_manh_sobre_quatro_patas_a_tarde_sobre_duas_e_a_noite_sobre_tr_s"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -42,11 +47,13 @@
 
     <Button
         android:id="@+id/submit_1"
-        android:layout_width="128dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="196dp"
+        android:layout_width="147dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="144dp"
+        android:background="#E91E63"
         android:text="@string/submeter"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 
 class SegundaTela : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_segunda_tela)
@@ -16,6 +17,15 @@ class SegundaTela : AppCompatActivity() {
         val editText: EditText = findViewById(R.id.submissao)
         submeter.setOnClickListener{
             if (editText.text.toString() == "O ser humano"){
+                Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
+                irParaTerceiraTela()
+
+            }
+            else if (editText.text.toString() == "Humano"){
+                Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
+                irParaTerceiraTela()
+            }
+            else if (editText.text.toString() == "Homem"){
                 Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaTerceiraTela()
             }
