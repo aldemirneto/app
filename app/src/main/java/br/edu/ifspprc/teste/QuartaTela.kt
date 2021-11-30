@@ -19,7 +19,10 @@ class QuartaTela : AppCompatActivity() {
         val editText: EditText = findViewById(R.id.submissao_3)
         val parar: ImageView = findViewById(R.id.parar_musica)
         mediaPlayer = MediaPlayer.create(this, R.raw.som)
-
+        val dica: Button = findViewById(R.id.Dica)
+        dica.setOnClickListener {
+            Toast.makeText(this@QuartaTela, "--.- ..- .- .-.. / .- / -- . .-.. .... --- .-. / ..-. .- -.-. ..- .-.. -.. .- -.. . / -.. --- / -... .-. .- ... .. .-.. ..--..", Toast.LENGTH_LONG).show()
+        }
         comecar.setOnClickListener{
 
             if(mediaPlayer.isPlaying){
@@ -35,11 +38,15 @@ class QuartaTela : AppCompatActivity() {
             if (editText.text.toString() == "IFSP") {
                 Toast.makeText(this@QuartaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaQuintaTela()
+                mediaPlayer.stop()
+
             }
 
             else{
                 Toast.makeText(this@QuartaTela, "Errou, tente novamente", Toast.LENGTH_SHORT).show()
                 editText.setText("")
+                mediaPlayer.stop()
+                mediaPlayer = MediaPlayer.create(this, R.raw.som)
 
             }
         }
