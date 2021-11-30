@@ -4,29 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SegundaTela">
+    tools:context=".QuartaTela">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="374dp"
-        android:layout_height="97dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="428dp"
-
-
-        android:fontFamily="sans-serif-condensed"
-        android:minHeight="48dp"
-        android:text="@string/que_animal_anda_pela_manh_sobre_quatro_patas_a_tarde_sobre_duas_e_a_noite_sobre_tr_s"
+        android:id="@+id/textView3"
+        android:layout_width="400dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="--.- ..- .- .-.. / .- / -- . .-.. .... --- .-. / ..-. .- -.-. ..- .-.. -.. .- -.. . / -.. --- / -... .-. .- ... .. .-.. ..--.."
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="409dp"
@@ -38,15 +33,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/submissao"
+            android:id="@+id/submissao_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="text"
-            android:hint="@string/escreva_aqui" />
+            android:hint="@string/escreva_aqui"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/submit_1"
+        android:id="@+id/submit_3"
         android:layout_width="147dp"
         android:layout_height="56dp"
         android:layout_marginEnd="140dp"
@@ -56,5 +51,27 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iniciar_musica"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+    <ImageView
+        android:id="@+id/parar_musica"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        app:srcCompat="@drawable/ic_baseline_stop_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

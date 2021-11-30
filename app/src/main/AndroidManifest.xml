@@ -10,11 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Teste">
         <activity
-            android:name=".TerceiraTela"
+            android:name=".QuintaTela"
+            android:exported="false" />
+        <activity
+            android:name=".QuartaTela"
             android:exported="false" />
         <activity
             android:name=".SegundaTela"
-            android:exported="true" />
+            android:exported="false" />
+        <activity
+            android:name=".TerceiraTela"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
