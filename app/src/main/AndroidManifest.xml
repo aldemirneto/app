@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Teste">
         <activity
+            android:name=".OitavaTela"
+            android:exported="false" />
+        <activity
+            android:name=".SetimaTela"
+            android:exported="false" />
+        <activity
             android:name=".SextaTela"
             android:exported="false" />
         <activity
