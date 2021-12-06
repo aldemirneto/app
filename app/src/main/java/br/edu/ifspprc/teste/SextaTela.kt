@@ -20,9 +20,10 @@ class SextaTela : AppCompatActivity() {
             Toast.makeText(this@SextaTela, "A imagem acima pode ou nao pode ser um ESTEREOGRAMA", Toast.LENGTH_SHORT).show()
         }
         submeter.setOnClickListener{
-            if (editText.text.toString() == "Homer") {
+            if (editText.text.toString().lowercase() == "homer") {
                 Toast.makeText(this@SextaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaSetimaTela()
+                finish()
 
             }
 

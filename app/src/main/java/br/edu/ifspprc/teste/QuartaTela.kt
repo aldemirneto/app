@@ -35,10 +35,11 @@ class QuartaTela : AppCompatActivity() {
             }
         }
         submeter.setOnClickListener{
-            if (editText.text.toString() == "IFSP") {
+            if (editText.text.toString().lowercase() == "ifsp") {
                 Toast.makeText(this@QuartaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaQuintaTela()
                 mediaPlayer.stop()
+                finish()
 
             }
 

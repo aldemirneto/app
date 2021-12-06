@@ -14,14 +14,16 @@ class TerceiraTela : AppCompatActivity() {
         val submet: Button = findViewById(R.id.botao_2)
         val text: EditText = findViewById(R.id.submissao_1)
         submet.setOnClickListener{
-            if (text.text.toString() == "A agua"){
+            if (text.text.toString().lowercase() == "a agua"){
                 Toast.makeText(this@TerceiraTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaQuartaTela()
+                finish()
 
             }
-            else if (text.text.toString() == "agua"){
+            else if (text.text.toString().lowercase() == "agua"){
                 Toast.makeText(this@TerceiraTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaQuartaTela()
+                finish()
             }
 
             else{

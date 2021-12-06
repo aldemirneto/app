@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         botao.setBackgroundResource(R.color.black)
         botao.setOnClickListener{
             IrParaSegundaTela()
+            finish()
         }
 
     }

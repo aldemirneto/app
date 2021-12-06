@@ -11,10 +11,11 @@ class OitavaTela : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_oitava_tela)
         val submeter: Button = findViewById(R.id.submit_7)
-        val editText: EditText = findViewById(R.id.submissao_7)
+
 
         submeter.setOnClickListener {
             Toast.makeText(this@OitavaTela, "obrigado por jogar!", Toast.LENGTH_SHORT).show()
+            finish()
         }
     }
 }

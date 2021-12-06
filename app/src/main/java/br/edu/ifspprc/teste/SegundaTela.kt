@@ -16,18 +16,21 @@ class SegundaTela : AppCompatActivity() {
         val submeter: Button = findViewById(R.id.submit_1)
         val editText: EditText = findViewById(R.id.submissao)
         submeter.setOnClickListener{
-            if (editText.text.toString() == "O ser humano"){
+            if (editText.text.toString().lowercase() == "o ser humano"){
                 Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaTerceiraTela()
+                finish()
 
             }
-            else if (editText.text.toString() == "Humano"){
+            else if (editText.text.toString().lowercase() == "humano"){
                 Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaTerceiraTela()
+                finish()
             }
-            else if (editText.text.toString() == "Homem"){
+            else if (editText.text.toString().lowercase() == "homem"){
                 Toast.makeText(this@SegundaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaTerceiraTela()
+                finish()
             }
             else{
                 Toast.makeText(this@SegundaTela, "Errou, tente novamente", Toast.LENGTH_SHORT).show()

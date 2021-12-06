@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#070707"
+    android:background="#050505"
     tools:context=".SetimaTela">
 
     <TextView
@@ -24,6 +24,7 @@
         android:id="@+id/textInputLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:textColorHint="#D5CECE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -36,8 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
 
+            android:background="@color/black"
+            android:backgroundTint="#221414"
             android:inputType="text"
-            tools:ignore="TextContrastCheck" />
+            android:textColor="#FFFCFC"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

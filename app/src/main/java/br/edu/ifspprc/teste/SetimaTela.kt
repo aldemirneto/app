@@ -19,9 +19,10 @@ class SetimaTela : AppCompatActivity() {
             Toast.makeText(this@SetimaTela, "Talvez você nao esteja brilhando o suficiente", Toast.LENGTH_SHORT).show()
         }
         submeter.setOnClickListener{
-            if (editText.text.toString() == "Lumos") {
+            if (editText.text.toString().lowercase() == "lumos") {
                 Toast.makeText(this@SetimaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaOitavaTela()
+                finish()
 
             }
 

@@ -23,6 +23,7 @@ class QuintaTela : AppCompatActivity() {
             if (editText.text.toString() == "2010") {
                 Toast.makeText(this@QuintaTela, "Acertou!", Toast.LENGTH_SHORT).show()
                 irParaSextaTela()
+                finish()
 
 
             }
